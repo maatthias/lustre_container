@@ -8,7 +8,7 @@ RUN dnf -y upgrade --refresh
 
 WORKDIR /tmp/
 
-# RUN curl "https://downloads.whamcloud.com/public/lustre/lustre-2.15.7/el9.6/client/RPMS/x86_64/lustre-client-dkms-2.15.7-1.el9.noarch.rpm" -o lustre-client-dkms-2.15.7-1.el9.noarch.rpm
+RUN curl "https://downloads.whamcloud.com/public/lustre/lustre-2.15.7/el9.6/client/RPMS/x86_64/lustre-client-dkms-2.15.7-1.el9.noarch.rpm" -o lustre-client-dkms-2.15.7-1.el9.noarch.rpm
 RUN curl "https://downloads.whamcloud.com/public/lustre/lustre-2.15.7/el9.6/client/RPMS/x86_64/lustre-client-2.15.7-1.el9.x86_64.rpm" -o lustre-client-2.15.7-1.el9.x86_64.rpm
 
 RUN ls -alh
