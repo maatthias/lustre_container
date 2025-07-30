@@ -2,7 +2,10 @@
 ## host system specifics in this test
 - `rhel 9.6` running kernel `5.14.0-570.30.1.el9_6.x86_64`
 
-## example mount on host
+## note the container lustre version in `Containerfile`
+- `lustre-client-2.15.7-1.el9.x86_64`
+
+## mount a test on host
 ```sh
 mkdir -p /tmp/test`
 mount -t lustre -o defaults,_netdev 12.34.56.78:/test /tmp/test`
